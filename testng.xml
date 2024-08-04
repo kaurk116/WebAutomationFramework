@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/home/karam/Documents/Projects/WebAutomationFramework/src/test/java/com/thetestingacademy/tests/vwoLogin.java">
+        <classes><class name="com.thetestingacademy.tests.vwoLogin">
+            <methods><include name="vwoLoginNegitive"/><include name="vwoLoginNegitive2"/></methods></class></classes></test></suite>
