@@ -45,6 +45,9 @@ public class CommonToAllPages2 {
         public WebElement visibilityOfElement(By elementLocation) {
             return new WebDriverWait(getDriver(), Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOfElementLocated(elementLocation));
         }
+    private WebElement waitForElement(WebElement element) {
+        return visibilityOfElement((By) element);
+    }
 
 }
 

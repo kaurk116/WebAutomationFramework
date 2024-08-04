@@ -2,6 +2,7 @@ package com.thetestingacademy.Pages.PageObjectModel;
 
 import com.thetestingacademy.Base.CommonToAllPages2;
 import com.thetestingacademy.Utils.PropertyReader;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,6 +29,11 @@ public class LoginPagePOM2 extends CommonToAllPages2 {
    @FindBy(className = "page-sub-title")
     private  static  WebElement sucess_msg;
 
+    // Waits
+    public WebElement waitForSuccessMessage() {
+        return visibilityOfElement(By.className("page-sub-title"));
+    }
+
     //Action
      public String LoginAction() throws FileNotFoundException {
          /*userName.sendKeys("admin@admin.com");
@@ -37,16 +43,20 @@ public class LoginPagePOM2 extends CommonToAllPages2 {
              enterInput(username, PropertyReader.readKey("Valid_Username"));
              enterInput(password, PropertyReader.readKey("ValidPassword"));
              ElementClick(button);
-         try {
+         /*try {
              Thread.sleep(30000);
          } catch (InterruptedException e) {
              throw new RuntimeException(e);
-         }
+         }*/
 
-            WebElement sucessMsg = getElement(sucess_msg, PropertyReader.readKey("SucessMsg"));
+            /* WebElement sucessMsg = getElement(sucess_msg, PropertyReader.readKey("SucessMsg"));
               String text = sucessMsg.getText();
-              return sucess_msg.getText();
-     }
+              return sucess_msg.getText();*/
+             WebElement sucess_msg = waitForSuccessMessage();
+             return sucess_msg.getText();
+
+             }
 
      }
+
 
