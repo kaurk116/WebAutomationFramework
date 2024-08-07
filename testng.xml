@@ -5,9 +5,9 @@
         <classes>
             <class name="com.thetestingacademy.tests.TestLoginValidUser">
             </class>
-            <class name="com.thetestingacademy.tests.TestLoginPagePOM">
+          <!--  <class name="com.thetestingacademy.tests.TestLoginPagePOM">
             </class>
-           <!-- <class name="com.thetestingacademy.tests.TestLoginPagePOM_QA">
+           <class name="com.thetestingacademy.tests.TestLoginPagePOM_QA">
             </class>
             <class name="com.thetestingacademy.tests.TestLoginPagePOM_QA">
             </class>-->
