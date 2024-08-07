@@ -3,14 +3,12 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="/home/karam/Documents/Projects/WebAutomationFramework/src/test/java/com/thetestingacademy/tests/vwoLogin.java">
         <classes>
-            <class name="com.thetestingacademy.tests.vwoLogin">
-            </class>
             <class name="com.thetestingacademy.tests.TestLoginValidUser">
             </class>
             <class name="com.thetestingacademy.tests.TestLoginPagePOM">
             </class>
-            <class name="com.thetestingacademy.tests.TestLoginPagePOM_QA">
+           <!-- <class name="com.thetestingacademy.tests.TestLoginPagePOM_QA">
             </class>
             <class name="com.thetestingacademy.tests.TestLoginPagePOM_QA">
-            </class>
+            </class>-->
         </classes></test></suite>
