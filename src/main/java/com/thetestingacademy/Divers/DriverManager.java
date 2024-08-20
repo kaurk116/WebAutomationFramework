@@ -36,6 +36,10 @@ public class DriverManager {
                     case "edge":
                         EdgeOptions edgeOptions = new EdgeOptions();
                         edgeOptions.addArguments("--guest");
+                        edgeOptions.addArguments("--headless");
+                        edgeOptions.addArguments("--no-sandbox");
+                        edgeOptions.addArguments("--disable-dev-shm-usage");
+                        edgeOptions.addArguments("--remote-allow-origins=*");
                         edgeOptions.setBinary("/usr/bin/microsoft-edge");
                         driver = new EdgeDriver(edgeOptions);
 
